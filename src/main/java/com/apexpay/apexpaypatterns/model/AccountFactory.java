@@ -9,7 +9,7 @@ import java.util.UUID;
 public class AccountFactory {
 
     public Account createAccount(AccountType accountType) {
-        String accountNumber = "AZ-" + UUID.randomUUID().toString().substring(0, 8).toUpperCase();
+        String accountNumber = "AZ-" + UUID.randomUUID().toString().substring(0, 16).toUpperCase();
 
         return switch (accountType) {
             case CURRENT -> new CurrentAccount(accountNumber);
