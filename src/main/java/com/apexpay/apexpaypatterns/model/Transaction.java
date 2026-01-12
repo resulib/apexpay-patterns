@@ -44,6 +44,14 @@ public class Transaction {
         return status;
     }
 
+    public String getSenderIban() {
+        return senderIban;
+    }
+
+    public String getReceiverIban() {
+        return receiverIban;
+    }
+
     public static Builder builder() {
         return new Builder();
     }
